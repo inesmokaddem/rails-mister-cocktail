@@ -1,11 +1,13 @@
-<div class="doses_bloc">
+<div class="col-xs-12 doses_bloc">
   <% @cocktail.doses.each do |dose|%>
-  <div class="card-dose">
+  <div class="col-xs-3 card-dose">
     <p>Ingredient: <%= dose.ingredient.name %></p>
     <p>Doses: <%= dose.description %></p>
-    <%= link_to 'Delete',  dose_path(dose),
+    <div class="delete_dose">
+      <%= link_to 'Delete',  dose_path(dose),
       method: :delete,
       class: 'btn btn-danger' %>
+    </div>
   </div>
   <% end %>
 </div>

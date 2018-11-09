@@ -2,7 +2,7 @@
   <h1>Cocktails</h1>
   <% @cocktails.each do |cocktail| %>
   <%= link_to cocktail_path(cocktail) do %>
-  <div class="card_cocktail">
+  <div class="col-xs-6 card_cocktail">
     <h3><%= cocktail.name%></h3>
   </div>
   <% end %>

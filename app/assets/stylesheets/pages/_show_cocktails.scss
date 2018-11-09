@@ -1,0 +1,19 @@
+.cocktail {
+  .doses_bloc {
+    .card-dose {
+      border: 1px solid #afabab;
+      margin: 20px 35px 20px 0;
+      padding: 20px;
+      background: #fff;
+      border-radius: 15px;
+      width: 30%;
+    }
+  }
+  .bloc_btn {
+    display: flex;
+    justify-content: space-between;
+    .add_btn {
+      margin-right: 40px;
+    }
+  }
+}
