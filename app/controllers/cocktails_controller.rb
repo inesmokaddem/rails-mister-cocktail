@@ -18,6 +18,8 @@ class CocktailsController < ApplicationController
 
   def show
     find_cocktail
+    @dose = Dose.new
+    @ingredient = Ingredient.new
   end
 
   private

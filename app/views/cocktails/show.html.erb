@@ -1,6 +1,10 @@
 <div class="container">
   <h1><%= @cocktail.name %></h1>
 
+  <%= render "list_doses" %>
+
   <%= link_to 'Return to list',  cocktails_path, class: 'btn btn-success' %>
+  <%= link_to 'Add dose',  new_cocktail_dose_path(@cocktail.id), class: 'btn btn-primary' %>
+
 
 </div>
